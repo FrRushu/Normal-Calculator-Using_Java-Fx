@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+
+<GridPane alignment="center" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <columnConstraints>
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+   </rowConstraints>
+   <children>
+      <VBox prefHeight="500.0" prefWidth="300.0">
+         <children>
+            <StackPane prefHeight="150.0" prefWidth="500.0">
+               <children>
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#096f80" height="80.0" stroke="BLACK" strokeType="INSIDE" width="280.0" />
+                  <Text fx:id="outPut" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+               </children>
+            </StackPane>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="10">
+               <children>
+                  <Button mnemonicParsing="false" onAction="#processNum" prefHeight="60.0" prefWidth="60.0" text="7">
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Button>
+
+                   <Button mnemonicParsing="false" onAction="#processNum" prefHeight="60.0" prefWidth="60.0" text="8">
+
+                       <font>
+                           <Font size="24.0" />
+                       </font>
+                   </Button>
+
+                   <Button mnemonicParsing="false" onAction="#processNum" prefHeight="60.0" prefWidth="60.0" text="9">
+
+                       <font>
+                           <Font size="24.0" />
+                       </font>
+                   </Button>
+
+                   <Button mnemonicParsing="false" onAction="#processOp" prefHeight="60.0" prefWidth="60.0" text="*">
+
+                       <font>
+                           <Font size="24.0" />
+                       </font>
+                   </Button>
+               </children>
+            </HBox>
+
+
+             <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="10">
+                 <children>
+                     <Button mnemonicParsing="false" onAction="#processNum" prefHeight="60.0" prefWidth="60.0" text="4">
+                         <HBox.margin>
+                             <Insets />
+                         </HBox.margin>
+                         <font>
+                             <Font size="24.0" />
+                         </font>
+                     </Button>
+
+                     <Button mnemonicParsing="false" onAction="#processNum" prefHeight="60.0" prefWidth="60.0" text="5">
+
+                         <font>
+                             <Font size="24.0" />
+                         </font>
+                     </Button>
+
+                     <Button mnemonicParsing="false" onAction="#processNum" prefHeight="60.0" prefWidth="60.0" text="6">
+
+                         <font>
+                             <Font size="24.0" />
+                         </font>
+                     </Button>
+
+                     <Button mnemonicParsing="false" onAction="#processOp" prefHeight="60.0" prefWidth="60.0" text="-">
+
+                         <font>
+                             <Font size="24.0" />
+                         </font>
+                     </Button>
+                 </children>
+             </HBox>
+
+
+             <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="10">
+                 <children>
+                     <Button mnemonicParsing="false" onAction="#processNum" prefHeight="60.0" prefWidth="60.0" text="1">
+                         <HBox.margin>
+                             <Insets />
+                         </HBox.margin>
+                         <font>
+                             <Font size="24.0" />
+                         </font>
+                     </Button>
+
+                     <Button mnemonicParsing="false" onAction="#processNum" prefHeight="60.0" prefWidth="60.0" text="2">
+
+                         <font>
+                             <Font size="24.0" />
+                         </font>
+                     </Button>
+
+                     <Button mnemonicParsing="false" onAction="#processNum" prefHeight="60.0" prefWidth="60.0" text="3">
+
+                         <font>
+                             <Font size="24.0" />
+                         </font>
+                     </Button>
+
+                     <Button mnemonicParsing="false" onAction="#processOp" prefHeight="111.0" prefWidth="60.0" text="+">
+
+                         <font>
+                             <Font size="24.0" />
+                         </font>
+                     </Button>
+                 </children>
+             </HBox>
+
+             <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="10">
+                 <children>
+                     <Button mnemonicParsing="false" prefHeight="60.0" prefWidth="60.0" text=".">
+                         <HBox.margin>
+                             <Insets />
+                         </HBox.margin>
+                         <font>
+                             <Font size="24.0" />
+                         </font>
+                     </Button>
+
+                     <Button mnemonicParsing="false" onAction="#processNum" prefHeight="60.0" prefWidth="60.0" text="0">
+
+                         <font>
+                             <Font size="24.0" />
+                         </font>
+                     </Button>
+
+                     <Button mnemonicParsing="false" onAction="#processOp" prefHeight="60.0" prefWidth="60.0" text="/">
+
+                         <font>
+                             <Font size="24.0" />
+                         </font>
+                     </Button>
+
+                     <Button mnemonicParsing="false" onAction="#processOp" prefHeight="60.0" prefWidth="60.0" text="=">
+
+                         <font>
+                             <Font size="24.0" />
+                         </font>
+                     </Button>
+                 </children>
+             </HBox>
+         </children>
+      </VBox>
+   </children>
+</GridPane>
